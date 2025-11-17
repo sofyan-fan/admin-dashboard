@@ -1,64 +1,170 @@
-*{
+* {
   list-style-type: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.container{
+body {
+  margin: 0;
+}
+
+.container {
   height: 100vh;
   display: grid;
   grid-template: 2fr 5fr / 200px 5fr;
 }
 
-.side-bar{
+.side-bar {
   background-color: #1992d4;
   color: white;
   font-weight: bold;
   grid-row: 1 / 3;
-  
+
 }
 
-h2{
+h2 {
   padding-left: 40px;
 }
 
-li{
-  line-height: 1.5;
+li {
+  line-height: 3;
+  display: flex;
 }
 
-.header{
+.menu-logo{
+  fill: white;
+  height: 30px;
+  width: 30px;
+  align-self: center;
+  margin-right: 10px;
+
+}
+
+.header {
   display: flex;
   flex-direction: column;
 }
 
-.nav-bar{
+.nav-container {
   display: flex;
   flex-direction: row;
-  background-color: green;
+
   height: 40%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+input {
+  background-color: lightgray;
+  height: 30px;
+  border-radius: 15px;
+  width: 100%;
+  min-width: 100px;
+  margin-left: 10px;
+  border: none;
+  padding-left: 20px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.magnify {
+  height: 20px;
+  width: 20px;
+  margin-top: 7px;
+  margin-left: 40px;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.profile-card {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.notification {
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+}
+
+.actionbar-container {
+  display: flex;
+  flex-direction: row;
+ 
+  height: 60%;
+  justify-content: space-between;
   align-items: center;
 
 }
 
-.action-bar{
-  background-color: blue;
-  height: 60%;
-}
-
-
-input{
-  background-color: lightgray;
-  height: 20px;
-  border-radius: 10px;
-  width: 70%;
-  max-width: 350px;
-  margin-left: 10px;
-  border: none;
-  
-}
-
-.magnify{
-  height: 20px;
-  width: 20px;
-  margin-top: 5px;
+.actionbar-left {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 125px 2fr;
+  height: 100%;
   margin-left: 40px;
+  align-items: center;
+}
+
+.profilecard-action {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  grid-row: 1 /4;
+}
+
+.greeting {
+  margin: 0px;
+  align-self: center;
+  font-size: 1em;
+  font-weight: bold;
+  grid-row: 2 / 3;
+}
+
+.profile-name {
+  margin: 0;
+  padding-left: 0;
+  font-size: 2em;
+}
+
+.actionbar-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-right: 100px;
+
+}
+
+button {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #1992d4;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  height: 36px;
+  width: 100px;
+  border-radius: 18px;
+  cursor: pointer;
+
+}
+
+.content{
+  background-color: lightgrey;
 }
