@@ -5,10 +5,10 @@
 
 body {
   margin: 0;
+
 }
 
 .container {
-  height: 100vh;
   display: grid;
   grid-template: 200px 5fr / 200px 5fr;
 }
@@ -18,6 +18,7 @@ body {
   color: white;
   font-weight: bold;
   grid-row: 1 / 3;
+  height: 100vh;
 
 }
 
@@ -169,33 +170,44 @@ button {
   background-color: lightgrey;
   display: flex;
   flex-direction: row;
- 
+
+
 
 
 }
 
 .content-left {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
   background-color: black;
   color: white;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding-left: 20px;
-  padding-top: 20px;
-  
+  justify-items: center;
+
+}
+
+
+.content-item1 {
+  height: 200px;
+  width: 400px;
+  margin: 10px;
+  background-color: red;
+
+
 }
 
 .content-right {
   display: flex;
   background-color: green;
- 
+  flex-direction: column;
+  gap: 10px;
+
 
 }
 
-.content-item1{
-  height: 200px;
-  width: 400px;
-  background-color: red;
 
+
+.content-itemr1 {
+  width: 500px;
+  height: 100px;
+  background-color: aqua;
 }
-
