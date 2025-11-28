@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  height: 100hv;
 
 }
 
@@ -177,37 +178,96 @@ button {
 }
 
 .content-left {
-  display: grid;
-  grid-template-columns: repeat(2, 600px);
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
   color: white;
-  justify-items: center;
-
-}
-
-
-.content-item1 {
-  height: 200px;
-  width: 400px;
-  margin: 10px;
-  background-color: red;
+  flex: 3;
 
 
 }
+
+.content-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 30px 0px 10px 30px;
+}
+
+.content-card-container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  flex: 5;
+  gap: 20px;
+  padding: 0px 30px 50px 30px;
+
+
+}
+
+.content-card {
+  background-color: white;
+  border-radius: 5px;
+  border-left: solid 5px;
+  border-left-color: orange;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content-text {
+  flex: 3;
+}
+
+.content-action {
+  align-self: end;
+}
+
 
 .content-right {
   display: flex;
-  background-color: green;
+  background-color: lightgray;
   flex-direction: column;
   gap: 10px;
-
-
+  flex: 1;
+  
 }
 
 
 
-.content-itemr1 {
-  width: 500px;
-  height: 100px;
-  background-color: aqua;
+.content-right-titles {
+
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 20px 0px 10px 0px;
+ 
+
+}
+
+.content-right-card {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+
+}
+
+h5 {
+  margin-bottom: 0px;
+}
+
+.announcments{
+  padding-bottom: 10px;
+}
+
+.under-line{
+  border-bottom: solid 0.5px;
+  border-color: lightgray;
 }
